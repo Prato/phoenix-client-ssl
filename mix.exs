@@ -7,7 +7,7 @@ defmodule PhoenixClientSsl.Mixfile do
     [
       app: :phoenix_client_ssl,
       version: "0.4.1",
-      elixir: "~> 1.4",
+      elixir: "~> 1",
       elixirc_paths: elixirc_paths(Mix.env()),
       description: description(),
       package: package(),

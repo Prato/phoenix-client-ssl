@@ -46,7 +46,7 @@ defmodule PhoenixClientSsl.Mixfile do
 
   defp deps do
     [
-      {:phoenix, "~> 1"},
+      {:phoenix, "~> 1.5.0-rc.0"},
       {:cowboy, "~> 1.0 or ~> 2.0"},
       {:glob, "~> 0.0.9"},
       {:absinthe_plug, "~> 1.4", optional: true},

@@ -40,21 +40,21 @@ defmodule PhoenixClientSsl.Mixfile do
       files: ["lib", "mix.exs", "README*", "LICENSE"],
       maintainers: ["airatel Inc.", "Jonatan Männchen"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/jshmrtn/phoenix-client-ssl"}
+      links: %{"GitHub" => "https://github.com/Prato/phoenix-client-ssl"}
     ]
   end
 
   defp deps do
     [
-      {:phoenix, "~> 1.5.0-rc.0"},
+      {:phoenix, ">= 1.5.0-rc.0"},
       {:cowboy, "~> 1.0 or ~> 2.0"},
       {:glob, "~> 0.0.9"},
       {:absinthe_plug, "~> 1.4", optional: true},
       {:inch_ex, only: :docs, runtime: false},
       {:ex_doc, ">= 0.0.0", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.4", only: [:dev, :test], runtime: false},
-      {:credo, "~> 0.5", only: [:dev, :test], runtime: false},
-      {:dialyxir, "~> 0.4", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.2", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false}
     ]
   end
 end
